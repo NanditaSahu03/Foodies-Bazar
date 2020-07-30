@@ -4,6 +4,8 @@
 
      <title>Foodie Bazar</title>
      <link rel="icon" type="image/x-icon" href="images/restaurant.png">
+
+
 <!-- 
 
 Eatery Cafe Template 
@@ -25,8 +27,185 @@ http://www.templatemo.com/tm-515-eatery
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
      <link rel="stylesheet" href="css/magnific-popup.css">
 
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+    
+     <!-- /* pricing section */ -->
+<style>
+    #portfolio-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 50px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+    
+    .portfolio-image-container {
+        max-width: 300px;
+        overflow: hidden;
+        margin: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .portfolio-image-container img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .portfolio-details {
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        color: transparent;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .portfolio-image-container:hover {
+        box-shadow: 0 0 20px #74ADC8;
+    }
+    
+    .portfolio-image-container:hover .portfolio-details {
+        /* background-color: #80808078; */
+        color: white;
+    }
+    
+    #anchorstyle{
+        /* text-decoration: none; */
+        font-size: 1.5rem;
+        color: white;
+        visibility: hidden;
+    }
+    .portfolio-image-container:hover a{
+        font-size: 1.5rem;
+        color:white;
+        visibility: visible;
+     }
+    
+</style>
+
+
+
+
+
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Cabin for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for Logo   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/templatemo-style.css">
+
+
+     <!-- pricing css -->
+     
+     <style>
+
+          * {
+              box-sizing: border-box;
+            }
+            
+            .columns {
+              float: left;
+              width: 33.3%;
+              padding: 8px;
+            }
+            
+            .price {
+              list-style-type: none;
+              border: 1px solid #eee;
+              margin: 0;
+              padding: 0;
+              -webkit-transition: 0.3s;
+              transition: 0.3s;
+            }
+          
+          .price-data {
+               height: 150px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+          }
+          p.special-text {
+               color: white;
+               display: block;
+               font-size: 18px;
+               font-weight: normal;
+               }
+            .price:hover {
+              box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+            }
+            
+            .price .header {
+              background-color: #111;
+              color: white;
+              font-size: 25px;
+            }
+            
+            .price li {
+              border-bottom: 1px solid #eee;
+              padding: 20px;
+              text-align: center;
+            }
+            
+            .price .grey {
+              background-color: #eee;
+              font-size: 20px;
+            }
+            .row.client-static .col-sm-2 {
+		     margin-bottom: 0;
+		     padding: 10px;
+	          
+          }
+          .row.list-slider .owl-item.active {
+		text-align: center !important;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		padding: 30px;
+	}
+	.row.list-slider .owl-item {
+		text-align: center !important;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		padding: 30px;
+	}
+	.row.list-slider .owl-stage {
+		display: flex;
+	}
+            
+            .button {
+              background-color: #4CAF50;
+              border: none;
+              color: white;
+              padding: 10px 25px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 18px;
+            }
+            #pricing-table{
+                 background-color:lightgray;
+            }
+            
+            @media only screen and (max-width: 600px) {
+              .columns {
+                width: 100%;
+              }
+            }
+            </style>
+
 
 </head>
 <body>
@@ -53,7 +232,7 @@ http://www.templatemo.com/tm-515-eatery
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand">Eatery <span>.</span> Cafe</a>
+                    <a href="index.html" class="navbar-brand"> <span>Foodies</span> Bazar</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -61,16 +240,16 @@ http://www.templatemo.com/tm-515-eatery
                     <ul class="nav navbar-nav navbar-nav-first">
                          <li><a href="#home" class="smoothScroll">Home</a></li>
                          <li><a href="#about" class="smoothScroll">About</a></li>
-                         <li><a href="#team" class="smoothScroll">Chef</a></li>
-                         <li><a href="#menu" class="smoothScroll">Menu</a></li>
+                         <li><a href="#team" class="smoothScroll">How It Works</a></li>
+                         <li><a href="#menu" class="smoothScroll">Key Features</a></li>
                          <li><a href="#contact" class="smoothScroll">Contact</a></li>
                          <li><a href="login.html" class="smoothScroll">Login</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                      <!-- <li><a href="#">Call Now! <i class="fa fa-phone"></i> 010 020 0340</a></li> -->
-                         <a href="#footer" class="section-btn">Reserve a table</a>
-                         <a href="#footer" class="section-btn">Download</a>
+                     <!-- <a href="#footer" class="section-btn">Reserve a table</a> -->
+                         <a href="#footer" class="section-btn"><i class="fa fa-download"></i>Download</a>
                     </ul>
                </div>
 
@@ -87,9 +266,9 @@ http://www.templatemo.com/tm-515-eatery
                               <div class="caption">
                                    <div class="container">
                                         <div class="col-md-8 col-sm-12">
-                                             <h3>Eatery Cafe &amp; Restaurant</h3>
+                                             <h3>Foodies Bazar</h3>
                                              <h1>Our mission is to provide an unforgettable experience</h1>
-                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet our chef</a>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">How It Works</a>
                                         </div>
                                    </div>
                               </div>
@@ -101,7 +280,7 @@ http://www.templatemo.com/tm-515-eatery
                                         <div class="col-md-8 col-sm-12">
                                              <h3>Your Perfect Breakfast</h3>
                                              <h1>The best dinning quality can be here too!</h1>
-                                             <a href="#menu" class="section-btn btn btn-default smoothScroll">Discover menu</a>
+                                             <a href="#menu" class="section-btn btn btn-default smoothScroll">Key Features</a>
                                         </div>
                                    </div>
                               </div>
@@ -112,8 +291,8 @@ http://www.templatemo.com/tm-515-eatery
                                    <div class="container">
                                         <div class="col-md-8 col-sm-12">
                                              <h3>New Restaurant in Town</h3>
-                                             <h1>Enjoy our special menus every Sunday and Friday</h1>
-                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Reservation</a>
+                                             <h1>Enjoy our Android App</h1>
+                                             <a href="#contact" class="section-btn btn btn-default smoothScroll">Download App</a>
                                         </div>
                                    </div>
                               </div>
@@ -161,7 +340,7 @@ http://www.templatemo.com/tm-515-eatery
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Meet our chefs</h2>
+                              <h2>How It Works?</h2>
                               <h4>They are nice &amp; friendly</h4>
                          </div>
                     </div>
@@ -235,7 +414,7 @@ http://www.templatemo.com/tm-515-eatery
 
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Our Menus</h2>
+                              <h2>Key Feature</h2>
                               <h4>Tea Time &amp; Dining</h4>
                          </div>
                     </div>
@@ -252,7 +431,7 @@ http://www.templatemo.com/tm-515-eatery
                                              <p>Tomato / Eggs / Sausage</p>
                                         </div>
                                         <div class="menu-price">
-                                             <span>$25</span>
+                                             <span>250</span>
                                         </div>
                                    </div>
                               </a>
@@ -271,7 +450,7 @@ http://www.templatemo.com/tm-515-eatery
                                              <p>Green / Fruits / Healthy</p>
                                         </div>
                                         <div class="menu-price">
-                                             <span>$18</span>
+                                             <span>180</span>
                                         </div>
                                    </div>
                               </a>
@@ -290,7 +469,7 @@ http://www.templatemo.com/tm-515-eatery
                                              <p>Pepper / Chicken / Vegetables</p>
                                         </div>
                                         <div class="menu-price">
-                                             <span>$34</span>
+                                             <span>340</span>
                                         </div>
                                    </div>
                               </a>
@@ -309,7 +488,7 @@ http://www.templatemo.com/tm-515-eatery
                                              <p>Green / Chicken</p>
                                         </div>
                                         <div class="menu-price">
-                                             <span>$28</span>
+                                             <span>280</span>
                                         </div>
                                    </div>
                               </a>
@@ -328,7 +507,7 @@ http://www.templatemo.com/tm-515-eatery
                                              <p>Beef / Fried Potatoes</p>
                                         </div>
                                         <div class="menu-price">
-                                             <span>$46</span>
+                                             <span>460</span>
                                         </div>
                                    </div>
                               </a>
@@ -347,7 +526,7 @@ http://www.templatemo.com/tm-515-eatery
                                              <p>Pepper / Crispy</p>
                                         </div>
                                         <div class="menu-price">
-                                             <span>$30</span>
+                                             <span>300</span>
                                         </div>
                                    </div>
                               </a>
@@ -358,6 +537,138 @@ http://www.templatemo.com/tm-515-eatery
                </div>
           </div>
      </section>
+
+<!-- client section -->
+
+<section id="portfolio" data-stellar-background-ratio="0.5">
+     <div class="container">
+          <h2 style="text-align:center">Our clients </h2>
+     <div id="portfolio-container">
+
+         <div class="portfolio-image-container">
+             <img src="https://menubazaar.com/storage/app/public/users/1595315997.png">
+             <div class="portfolio-details">
+                 <p id="anchorstyle">
+                     <a href="https://www.zomato.com/chandigarh/uttams-bakery-restaurant-sector-46" target="_blank"> Website Link</a>
+                 </p>
+             </div>
+
+         </div>
+         <div class="portfolio-image-container">
+             <img src="https://menubazaar.com/storage/app/public/users/1595330892.jpeg">
+             <div class="portfolio-details">
+                 <p id="anchorstyle">
+                     <a href="https://www.zomato.com/chandigarh/uttams-bakery-restaurant-sector-46" target="_blank">Website Link</a>
+                 </p>
+             </div>
+
+         </div>
+         <div class="portfolio-image-container">
+             <img src="https://menubazaar.com/storage/app/public/users/1595592796.png">
+             <div class="portfolio-details">
+                 <p id="anchorstyle">
+                     <a href="https://www.zomato.com/chandigarh/uttams-bakery-restaurant-sector-46" target="_blank">Website Link</a>
+                 </p>
+             </div>
+         </div>
+
+         <div class="portfolio-image-container">
+             <img src="https://menubazaar.com/storage/app/public/users/1595411218.jpeg">
+             <div class="portfolio-details">
+                 <p id="anchorstyle">
+                     <a href="https://www.zomato.com/chandigarh/uttams-bakery-restaurant-sector-46" target="_blank">Website Link</a>
+                 </p>
+             </div>
+         </div>
+
+         <div class="portfolio-image-container">
+             <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+             <div class="portfolio-details">
+                 <p>
+                     More come.
+                 </p>
+             </div>
+         </div>
+         </div>
+     </div>
+ </section>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- start pricing table -->
+  <section id="pricing-table" data-stellar-background-ratio="0.5">
+<div class="container">
+     <h2 style="text-align:center">Our Pricing  </h2>
+
+
+<div class="columns">
+     <ul class="price">
+      <li class="header" style="background-color:#dc3545"><b>Monthly</b></li>
+     <!-- <li class="grey">$ 24.99 / year</li> -->
+
+     <div class="price-data" style="background-color: #dc3545;">
+
+          <p style="color: black;font-size:25px;"><b><del>299</del> 199<span>INR</b></span></p>
+
+          <p class="special-text">(Beginner Pack)</p>
+
+     </div>
+
+  <!-- <ul class="price">
+    <li class="header">Monthly</li>
+    <li class="grey"><p><del>299</del> 199<span>INR</span></p></li>
+    <li>299 199INR</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul> -->
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#5ea8fd">Half Yearly</li>
+    
+    <div class="price-data" style="background-color: #5ea8fd;">
+
+     <p style="color: black;font-size:25px;"><b><del>1499</del> 1199<span>INR</b></span></p>
+
+     <p class="special-text">(Decent Pack)</p>
+
+</div>
+    <!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color: #9ab45b;">Annually</li>
+    <div class="price-data" style="background-color: #9ab45b;">
+
+     <p style="color: black;font-size:25px;"><b><del>2999</del> 1999<span>INR</b></span></p>
+
+     <p class="special-text">(Popular Pack)</p>
+
+</div>
+    <!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
+  </ul>
+</div>
+<div>
+<p style="text-align:center">* Price Exclusive of GST, 18% GST rate applicable</p>
+</div>
+</div>
+   </section>
+   <!-- End pricing table -->
+
 
 
      <!-- TESTIMONIAL -->
@@ -521,9 +832,9 @@ http://www.templatemo.com/tm-515-eatery
                          </ul>
 
                          <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
-                              <p><br>Copyright &copy; 2018 <br>Your Company Name 
+                              <p><br>Copyright &copy; 2020 <br>Foodies Bazar 
                               
-                              <br><br>Design: <a rel="nofollow" href="http://templatemo.com" target="_parent">TemplateMo</a></p>
+                              <br><br>Design By: <a rel="nofollow" href="http://templatemo.com" target="_parent"></a>Abhishek kumar Lalu</p>
                          </div>
                     </div>
                     
